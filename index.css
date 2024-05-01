@@ -1,0 +1,77 @@
+.mainBox{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+}
+
+.stage{
+    width: 50%;
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+.mainBoxA{
+   display: flex; 
+
+}
+.boxA{
+    background-color: orange;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+margin: 10px;
+
+}
+.mainB{
+    display: flex;
+}
+
+.boxB{
+    background-color: pink;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+margin: 10px; 
+}
+
+.mainC{
+    display: flex;
+}
+.boxC{
+    background-color: blue;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+margin: 10px; 
+}
+.mainD{
+    display: flex;
+}
+.boxD{
+    background-color: red;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+margin: 10px; 
+}
