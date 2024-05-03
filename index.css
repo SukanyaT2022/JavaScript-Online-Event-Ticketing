@@ -1,77 +1,148 @@
-.mainBox{
-
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 50px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 
-.stage{
-    width: 50%;
-    height: 100px;
-    background-color: blueviolet;
-    display: flex;
+.mainBox {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stage {
+  width: 50%;
+  height: 100px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.mainBoxA {
+  display: flex;
+}
+.boxA {
+  background-color: orange;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+.mainB {
+  display: flex;
+}
+
+.boxB {
+  background-color: pink;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.mainC {
+  display: flex;
+}
+.boxC {
+  background-color: lightgreen;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+.mainD {
+  display: flex;
+}
+.boxD {
+  background-color: red;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+.totalticketPrice {
+  align-self: flex-start;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 900px) {
+    .stage {
+        width: 65%;
+        
+      }
+  .mainBoxA {
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    margin-bottom: 40px;
-}
-
-
-.mainBoxA{
-   display: flex; 
-
-}
-.boxA{
-    background-color: orange;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
+    width: 70%;
+ 
+  }
+  .boxA {
+  
+    width: 70px;
+    height: 70px;
+  }
+  .mainB {
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-margin: 10px;
+    width: 70%;
+  }
+
+  .boxB {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mainC {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+  }
+  .boxC {
+    width: 70px;
+    height: 70px;
+  }
+  .mainD {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+  }
+  .boxD {
+ 
+    width: 70px;
+    height: 70px;
+  }
 
 }
-.mainB{
-    display: flex;
-}
 
-.boxB{
-    background-color: pink;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-margin: 10px; 
-}
-
-.mainC{
-    display: flex;
-}
-.boxC{
-    background-color:lightgreen;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-margin: 10px; 
-}
-.mainD{
-    display: flex;
-}
-.boxD{
-    background-color: red;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-margin: 10px; 
+@media screen and (max-width: 600px) {
 }
