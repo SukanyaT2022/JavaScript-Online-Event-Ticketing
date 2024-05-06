@@ -9,24 +9,30 @@ body {
 }
 
 .mainBox {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
+  position:relative;
+  /* background-color: blueviolet; */
+  margin-bottom: 200px;
 }
 
 .stage {
-  width: 50%;
+  width: 30%;
   height: 100px;
   background-color: blueviolet;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  margin-bottom: 40px;
+  position: absolute;
+  top: 30px;
+border-radius: 20px;
+  
 }
 
 .mainBoxA {
@@ -91,6 +97,12 @@ body {
   align-self: flex-start;
   margin-top: 50px;
   margin-left: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: aqua;
+  border: 1px solid black;
+  padding: 30px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -146,3 +158,28 @@ body {
 
 @media screen and (max-width: 600px) {
 }
+
+
+/* cone */
+
+  #cone {
+    width: 0;
+    height: 0;
+    border-left: 940px solid transparent;
+    border-right: 940px solid transparent;
+    border-top: 700px solid lightgrey;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -100px;
+    left: -490px;
+    z-index: -1;
+  
+ 
+  }
+  .wrapAllSmallCircle{
+    position: relative;
+    /* background-color: aquamarine; */
+ padding-top: 200px;
+  }
+  
