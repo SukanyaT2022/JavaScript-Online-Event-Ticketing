@@ -14,25 +14,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 100px;
   font-family: Arial, Helvetica, sans-serif;
-  position:relative;
-  /* background-color: blueviolet; */
+  position: relative;
   margin-bottom: 200px;
 }
 
 .stage {
-  width: 30%;
-  height: 100px;
-  background-color: blueviolet;
+  width: 50% !important;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  position: absolute;
-  top: 30px;
-border-radius: 20px;
-  
+  background-color: orange;
+  margin-right: 180px;
+  border-radius: 20px;
+}
+
+.wrapAllSmallCircle {
+  padding: 50px 200px 0px 0px;
 }
 
 .mainBoxA {
@@ -100,26 +101,35 @@ border-radius: 20px;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: aqua;
-  border: 1px solid black;
-  padding: 30px;
+  border: 2px solid orange;
+  border-radius: 20px;
+  padding: 50px;
 }
-
+/* ipad pro */
 @media screen and (max-width: 1024px) {
+  .wrapAllSmallCircle {
+    padding: 80px 0px 0px 0px;
+  }
+  .stage {
+    margin-top: 200px;
+    margin-right: 0px;
+  }
+  .totalticketPrice {
+    top: -30px;
+  }
 }
+/* ipad air  */
 @media screen and (max-width: 900px) {
-    .stage {
-        width: 65%;
-        
-      }
+  .stage {
+    width: 65%;
+  }
   .mainBoxA {
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
- 
+    margin: auto;
   }
   .boxA {
-  
     width: 70px;
     height: 70px;
   }
@@ -127,6 +137,7 @@ border-radius: 20px;
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
+    margin: auto;
   }
 
   .boxB {
@@ -138,6 +149,7 @@ border-radius: 20px;
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
+    margin: auto;
   }
   .boxC {
     width: 70px;
@@ -147,39 +159,69 @@ border-radius: 20px;
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
+    margin: auto;
   }
   .boxD {
- 
     width: 70px;
     height: 70px;
   }
 
+  .wrapAllSmallCircle {
+    padding: 80px 0px 0px 0px;
+  }
+  .stage {
+    width: 58% !important;
+  }
+  .totalticketPrice {
+    top: -50px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-}
-
-
-/* cone */
-
-  #cone {
-    width: 0;
-    height: 0;
-    border-left: 940px solid transparent;
-    border-right: 940px solid transparent;
-    border-top: 700px solid lightgrey;
-    border-radius: 50%;
-    transform: rotate(180deg);
-    position: absolute;
-    top: -100px;
-    left: -490px;
-    z-index: -1;
-  
- 
+  .boxA {
+    width: 50px;
+    height: 50px;
   }
-  .wrapAllSmallCircle{
+  .mainBoxA {
+    width: 100%;
+  }
+  .boxB {
+    width: 50px;
+    height: 50px;
+  }
+  .mainB {
+    width: 100%;
+  }
+  .boxC {
+    width: 50px;
+    height: 50px;
+  }
+  .mainC {
+    width: 100%;
+  }
+  .boxD {
+    width: 50px;
+    height: 50px;
+  }
+  .mainD {
+    width: 100%;
+  }
+  .stage {
+    width: 80% !important;
+    height: 60px;
+    font-size: 25px;
+    margin-top: 0;
+  }
+  .totalticketPrice {
     position: relative;
-    /* background-color: aquamarine; */
- padding-top: 200px;
+    bottom: 0 !important;
+    right: 50%;
+    transform: translateX(35%);
+    border-radius: 20px;
+    width: 80%;
   }
-  
+  .wrapAllSmallCircle {
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
+}
